@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LawyerOffice.Implementation;
 
 namespace LawyerOffice.Contracts
 {
-    internal class ITask
+    public interface ITask
     {
-
+        public string GetTask(TASKTYPE taskt);
     }
 }
