@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LawyerOffice.Service;
+using LawyerOffice.Utility;
+using System;
 
 namespace LawyerOffice.Implementation
 {
@@ -11,17 +9,20 @@ namespace LawyerOffice.Implementation
         TaskDelivery taskdelivery = new TaskDelivery();
         FoodDelivery fooddelivery = new FoodDelivery();
 
-        //DeliveryService
-        //
+        string ID { get; set; }
+        string ReferenteDelivery { get; set; }
+        int NumeroTelefono { get; set; }
+        string email { get; set; }
 
-        public string GetCibo(FOODTYPE food)
+        public Food ordinaCibo(Food food)
         {
-            return fooddelivery.GetCibo(food);
+            return fooddelivery.DeliveryOrder(food);
         }
 
-        public void GetTask()
+        public string ordinaTask(TASKTYPE taskt)
         {
-
+            //return taskdelivery.GetTask(taskt);
+            return string.Empty;
         }
     }
 }

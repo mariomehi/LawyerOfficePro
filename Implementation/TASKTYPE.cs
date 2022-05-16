@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace LawyerOffice.Implementation
 {
-    public enum FOODTYPE
+    public enum TASKTYPE
     {
-        Coffee,
-        Sandwich,
-        Pizza
+        fiscale,
+        legale
     }
 }
